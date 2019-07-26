@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="9yxCs9jECkmc07on50hyVUr83/QeRjkrXfcRK9vZ7tPfNMk9FfYv9xKX/9AXBdxR/AuU7vsux5TfLg6v9yMmLg==" />
+<meta name="csrf-token" content="a3qAN/Jzbyld0d7kH+IVU28xBNJ5iLY+B5FravqcgJy044vypJtc8jUr20/1cGs0QDJEeecLgX+Uy5hCoYDdGQ==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -39,9 +39,9 @@
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 512px; left: 713px; top: 270px; height: auto;" data-block-id="3750bd1b9da27321885ae4a36dc0dc55"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
 <ul>
-	<li>java - annotations <br>
+	<li>java<span style="color:#FF0000">*</span> - annotations<br>
 	 </li>
-	<li>C# - attributes<br>
+	<li>C#* - attributes<br>
 	 </li>
 	<li>Python - decorators</li>
 </ul>
@@ -85,7 +85,8 @@
  
   @expire(days = 15) 
   def createCookie(self):
-    // logic</code></pre></div></div>
+    // logic
+    pass </code></pre></div></div>
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 378px; height: 206px; left: 47px; top: 272px;" data-block-id="ad657787f997463df56b3484714e4a25"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 18; font-size: 115%;"><pre class="javascript"><code data-line-numbers="">public class Cookies {    
     
    @expire(days = 15)
@@ -106,7 +107,7 @@
 
 <p style="text-align:center"> </p>
 
-<p><span style="font-size:1.0em">Simple and  laconic, just add your your functionalit</span></p>
+<p><span style="font-size:1.0em">Simple and  laconic, just add your functionality</span></p>
 </div>
 
 </div></section><section data-id="cb07f7c5305141794ffe9d4374d48f7d"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 47px; height: auto;" data-block-id="747fb4578a41f8f162b226f6f608ad30"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
@@ -219,14 +220,15 @@ orc.getPower(); // 85hp</code></pre></div></div>
 </div></div></section></section><section class="stack" data-id="3867e4b8af4f755761b49f158bffea57"><section data-id="8112425b8a91732b09b88d72a627a0e4"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 72px; height: auto;" data-block-id="379168ad498645e24301f87042a03e3f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
 <h1>Hooray decorator</h1>
 </div></div>
-<div class="sl-block" data-block-type="code" style="width: 582px; height: 267px; left: 618px; top: 309px;" data-block-id="0e5a0f4b23733bd72cc1dec02bc5a980"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11; font-size: 170%;"><pre class="javascript"><code data-line-numbers="">const hooray = orc =&gt; {    
+<div class="sl-block" data-block-type="code" style="width: 721px; height: 267px; left: 511px; top: 309px;" data-block-id="0e5a0f4b23733bd72cc1dec02bc5a980"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11; font-size: 151%;"><pre class="javascript"><code data-line-numbers="">const hooray = orc =&gt; {    
     return function() {
-        const power = orc.getPower.apply(orc, arguments);
+        const power = orc.getPower
+                         .apply(orc, arguments);
         animateHooray(orc);
         return power + 100;
     }
 }</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 441px; left: 80px; top: 309px;" data-block-id="5134ba566ccc1245202fee8f9a552abe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 441px; left: 39px; top: 309px;" data-block-id="5134ba566ccc1245202fee8f9a552abe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
 <p style="text-align:left">  Decorator mutates extends the function and adds hooray animation!</p>
 </div></div></section><section data-id="30532aff6dc87ed6bfb459e7ec9aacf3"><div class="sl-block" data-block-type="code" style="width: 728px; height: 577px; left: 36px; top: 106px;" data-block-id="d4d7d87f28b3c901ea65aa76538a2230"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10; font-size: 150%;"><pre class="javascript"><code data-line-numbers="">const orc = new Orc();
 
@@ -244,6 +246,37 @@ orc.getPower(); // 185hp</code></pre></div></div>
 <div class="sl-block" data-block-type="image" style="width: 435px; height: 577px; left: 798px; top: 106px; min-width: 4px; min-height: 4px;" data-block-id="96508fd2a850089fe7e0a64278684085"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="489" data-natural-height="649" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1103426/images/6395061/0.jpg"></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 40px; top: 33px;" data-block-id="30020c9940cd4ceccc09854988b008a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
 <p style="text-align: left;"><span style="color:rgb(255, 255, 255); text-align:left">Satisfied Orc - Strong Orc</span></p>
+</div></div></section><section data-id="2942916da5dbe0b405ad659365697c84"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 72px; height: auto;" data-block-id="1aeafb9c393df62f09d38de61f1963cd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Hooray class decorator</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 721px; height: 297px; left: 511px; top: 309px;" data-block-id="f4fccd7e5f43a6055ebb3d8971b7737e"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11; font-size: 151%;"><pre class="javascript"><code data-line-numbers="">function hoorayClass(entity) {
+    const old = entity.prototype.getPower;
+    
+    entity.prototype.getPower = function() {
+      const power = old.apply(this, arguments);
+      animateHooray(this);
+      return power + 100;
+    }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 441px; left: 39px; top: 309px;" data-block-id="a8c1705d28270c9bff3a1eaaa88b5b4e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">Decorator for class?<br>
+Easy!</p>
+</div></div></section><section data-id="b44c87443ea1828ba940717fe5c1c9d9"><div class="sl-block" data-block-type="code" style="width: 728px; height: 577px; left: 36px; top: 106px;" data-block-id="23ba10dda568d3880bcdc6528967a4f2"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10; font-size: 150%;"><pre class="javascript"><code data-line-numbers="">hoorayClass(Orc);
+const orc = new Orc();
+
+shoes(orc);
+helm(orc);
+shoulders(orc);
+armor(orc);
+
+orc.equipment; 
+// ['shoes', 'helm', 'shoulders', 
+//  'pants', 'bib', 'gloves']
+
+orc.getPower(); // 185hp</code></pre></div></div>
+<div class="sl-block" data-block-type="image" style="width: 435px; height: 577px; left: 798px; top: 106px; min-width: 4px; min-height: 4px;" data-block-id="46b675eb321369917e885b45a0e10075"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="489" data-natural-height="649" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1103426/images/6395061/0.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 40px; top: 33px;" data-block-id="de0b77083e4933d645c3a904b9bc4020"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left"><span style="color:rgb(255, 255, 255); text-align:left">Satisfied Orc - Strong Orc</span></p>
 </div></div></section></section><section data-id="eb1aebcbe0738fa01b611afee269300f"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 72px; height: auto;" data-block-id="0e932ac69921f76ae1bb3e80b20adcc7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1>ES proposals</h1>
 </div></div>
@@ -297,10 +330,61 @@ orc.getPower(); // 185hp</code></pre></div></div>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 520px; left: 680px; top: 576px;" data-block-id="c56066d4fba6edf9089c3cba0a6c2986"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
 <p>Propos to add default decorators, and use them.</p>
-</div></div></section><section data-id="8fd5f6403aac57ec50464b43f4280548"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 72px; height: auto;" data-block-id="eb3c6e90fd1ccb3e5a23222bd701bd50"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+</div></div></section><section class="stack" data-id="39595a841ccef467a572088b323d0822"><section data-id="c06b6ee005c682b7ab6d4af63b57c099"><div class="sl-block" data-block-type="text" style="width: 1075px; left: 103px; top: 72px; height: auto;" data-block-id="ed576cf0462ecdff5487afe49483833f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>@bind</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 844px; height: 419px; left: 218px; top: 209px;" data-block-id="193e5b7f91ad220dda81e7653ab0b1cb"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12; font-size: 145%;"><pre class="javascript"><code data-line-numbers="">export const bind = function (target, key, { value: fn }) {
+  return {
+    configurable: true,
+    get() {
+      const value = fn.bind(this);
+      Object.defineProperty(this, key, {
+        value,
+        configurable: true,
+        writable: true,
+      });
+      return value;
+    },
+  };
+};</code></pre></div></div></section><section data-id="79c03ce122abc7f85735a6d2ca4c71d0"><div class="sl-block" data-block-type="text" style="width: 1075px; left: 103px; top: 72px; height: auto;" data-block-id="d8c4ee123eca26a20de6ab60c088797d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Usage</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 844px; height: 419px; left: 218px; top: 209px;" data-block-id="a71cee7ac09bb5f382f787fa89debf26"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11; font-size: 145%;"><pre class="javascript"><code data-line-numbers="">import { bind } from './decorators';
+
+class Welcome extends React.Component {
+  @bind
+  someHandler(e) {
+    console.log(this); //always Welcome component
+  }
+
+  render() {
+    return &lt;h1 onClick={this.someHandler}&gt;Click me&lt;/h1&gt;;
+  }
+}</code></pre></div></div></section></section><section class="stack" data-id="baef2af6f520f5ab3da18bcae0e57bfc"><section data-id="37b2ee4a3915b24ba96b78fd70b758c3"><div class="sl-block" data-block-type="text" style="width: 1075px; left: 103px; top: 72px; height: auto;" data-block-id="82a086dc8e499ae6f3a30bf6d1e48408"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Class</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 844px; height: 419px; left: 218px; top: 209px;" data-block-id="6c3133aaff3a6db5fa0e6430473ff782"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11; font-size: 145%;"><pre class="javascript"><code data-line-numbers="">export const select = function (storeSelectors) {
+  
+  return function (Class) {
+    class Select extends Class {
+      constructor(...args) {
+        super(...args);
+
+        this.state = storeSelectors
+      }
+    }
+    return Select;
+  };
+};</code></pre></div></div></section><section data-id="503f988b930a7e241e72eb69c0cc3bff"><div class="sl-block" data-block-type="text" style="width: 1075px; left: 103px; top: 72px; height: auto;" data-block-id="53b18b3a05c756705ff0bf9d4fdb8375"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Class usage</h1>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 844px; height: 419px; left: 218px; top: 209px;" data-block-id="79e135e479a819e673d554191d4c79c2"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11; font-size: 145%;"><pre class="javascript"><code data-line-numbers="">@select({someData: 1234})
+class Component {
+    // code
+}</code></pre></div></div></section></section><section data-id="8fd5f6403aac57ec50464b43f4280548"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 72px; height: auto;" data-block-id="eb3c6e90fd1ccb3e5a23222bd701bd50"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1>Could be helpful</h1>
 </div></div>
-<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; min-height: 30px; width: 1127px; left: 73px; top: 213px;" data-block-id="118c711ab6da71f2a52fa0002ded06ff"><div class="sl-block-content" style="z-index: 12; font-size: 65%;" data-table-rows="6" data-table-cols="2"><table><tbody>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; min-height: 30px; width: 1127px; left: 80px; top: 216px;" data-block-id="118c711ab6da71f2a52fa0002ded06ff"><div class="sl-block-content" style="z-index: 12; font-size: 65%;" data-table-rows="6" data-table-cols="2"><table><tbody>
 <tr>
 <th style="width: 599px;">https://github.com/wycats/javascript-decorators</th>
 <th>With babel you can do magic</th>
@@ -328,13 +412,13 @@ orc.getPower(); // 185hp</code></pre></div></div>
 </tbody></table></div></div></section><section data-id="d2f3360b85181e36fa3246226f4edfa5"><div class="sl-block" data-block-type="text" style="width: 1076px; left: 102px; top: 72px; height: auto;" data-block-id="cbb2fe63453800edb2fbf41c229c4b61"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
 <h1>Thanks</h1>
 </div></div>
-<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 414px; height: 414px; left: 433px; top: 216px;" data-block-id="a43d05edd0323deb857fb09dd7522ff9"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="200" data-natural-height="200" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1103426/images/6395356/qa-decorators.png"></div></div></section>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 414px; height: 414px; left: 433px; top: 216px;" data-block-id="a43d05edd0323deb857fb09dd7522ff9"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="200" data-natural-height="200" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1103426/images/6395356/qa-decorators.png"></div></div></section>
 			</div>
 		</div>
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1103426,"username":"shtadler","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/bd622b19ba0174758ab6db085240d2a9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3601812,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"andrushtadler@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":517373,"storage_limit":262144000},"deck":{"id":1564788,"slug":"decorator","title":"Decorator","description":"","width":1280,"height":720,"visibility":"all","published_at":"2019-07-25T17:21:14.715Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/e45d73087536fc5cf02add81ab01950b/thumb.jpg?1564075439","view_count":1,"user":{"id":1103426,"username":"shtadler","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/bd622b19ba0174758ab6db085240d2a9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3601812,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":26,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1564168410127,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1103426,"username":"shtadler","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/bd622b19ba0174758ab6db085240d2a9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3601812,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1103426,"username":"shtadler","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/bd622b19ba0174758ab6db085240d2a9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3601812,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"andrushtadler@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":517373,"storage_limit":262144000},"deck":{"id":1564788,"slug":"decorator","title":"Decorator","description":"","width":1280,"height":720,"visibility":"all","published_at":"2019-07-25T17:21:14.715Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/e45d73087536fc5cf02add81ab01950b/thumb.jpg?1564075439","view_count":1,"user":{"id":1103426,"username":"shtadler","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/bd622b19ba0174758ab6db085240d2a9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3601812,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":34,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1564173483456,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":true,"notes":{}},"user":{"id":1103426,"username":"shtadler","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/bd622b19ba0174758ab6db085240d2a9?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3601812,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
